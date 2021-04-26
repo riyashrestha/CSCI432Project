@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/generate.css" rel="stylesheet" />
+		<link href="fontawesome/css/all.min.css" rel="stylesheet" />
+		<title>Generate Keys</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="step-one">
+				<div class="content">
+
+					<div class="flex-content">
+						<h1>Generate Keys</h1>
+						<h2>Enter the username, email and passphrase. A copy of public and private key will be generated. Passphrase will be used to encrypt the private key.</h2>
+						
+						<label for = "userName">User Name:</label>
+						<input type="text" placeholder = "John Smith" id="userName" required />
+						
+						<label for = "userEmail">User Email:</label>
+						<input type="email" placeholder = "johnsmith@gmail.com" id="userEmail" required />
+						
+						<label for = "passphrase">Passphrase:</label>
+						<input type="text" placeholder = "Passphrase" id="passphrase" required />
+					</div>
+					
+					<div>
+						<button class="button encrypt red" onclick="gen()">Generate keys</button>
+						<span id="userKey"></span>
+						<input class="button encrypt blue" type="button" id="dwn-btn1" value="Download"/>
+
+						<!-- Go back -->
+						<a href="index.html">Go back to main menu</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScript links -->
+		<script type="text/javascript" src="lib/openpgp.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/index.css" rel="stylesheet" />
+		<link href="fontawesome/css/all.min.css" rel="stylesheet" />
+		<title>File Encryption App</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="main-menu">
+				<div class="content">
+					<h1>What do you want to do?</h1>
+					<div class="flex">
+						<a href="generate.html" class="button keys blue"><i class="fas fa-key"></i>Generate keys</a><br/>
+						<!-- Vertical line -->
+						<span></span>
+						<a href="encrypt.html" class="button encrypt red"><i class="fas fa-lock"></i>Encrypt file</a><br/>
+						<!-- Vertical line -->
+						<span></span>
+						<a href="decrypt.html" class="button decrypt yellow"><i class="fas fa-unlock"></i>Decrypt file</a><br/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScript links -->
+		<script type="text/javascript" src="lib/openpgp.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

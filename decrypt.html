@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/decrypt.css" rel="stylesheet" />
+		<link href="fontawesome/css/all.min.css" rel="stylesheet" />
+		<title>Decrypt File</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="step-two">
+				<div class="content">
+
+					<div class="flex-content">
+						<h1>Decrypt file</h1>
+						<h2>Choose which file to decrypt. Only files encrypted by this tool are accepted.</h2>
+
+						<!-- Display any errors -->
+						<div id="display"></div>
+						<br>
+						
+						<label for = "decrypt-input">Browse a file to decrypt</label>
+						<input type="file" id="decrypt-input"/><br/>
+						
+						<label for = "private-key">Browse a private key</label>
+						<input type="file" id="private-key"/><br/><br/>
+						<h2>This private key will be used as an decryption key.</h2>
+
+						
+						<label for = "passphrase2">Passphrase:</label>
+						<input type="text" placeholder="Passphrase" id="passphrase2"/><br/><br>
+						<h2>This passphrase was used to encrypt the private key.</h2>
+					</div>
+
+					<div>
+						<button class="button encrypt red" onclick="dec()">Decrypt</button>
+						<span id="decrypted"></span>
+						<input class="button encrypt blue" type="button" id="dwn-btn2" value="Download"/>
+						
+						<!-- Go back -->
+						<a href="index.html">Go back to main menu</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScript links -->
+		<script type="text/javascript" src="lib/openpgp.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
